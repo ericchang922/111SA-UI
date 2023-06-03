@@ -10,6 +10,7 @@ body {
     height: 300px;
     background-color: chocolate;
     position: absolute;
+    z-index: -1;
 }
 
 .block2 {
@@ -134,5 +135,37 @@ button {
     border-radius: 5px;
     position: absolute;
     top: 440px;
-    left: 635px;
+    left: 585px;
+}
+
+.insectionid1 {
+    font-size: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: 570px;
+}
+
+.insectionid2 {
+    font-size: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: 380px;
+    left: 150px;
+}
+
+.insectionid3 {
+    font-size: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: 380px;
+    left: 1000px;
+}
+
+.insectionid4 {
+    font-size: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: 750px;
+    left: 570px;
 }
