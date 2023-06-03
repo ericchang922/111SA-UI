@@ -1,0 +1,45 @@
+    body {
+      background: #f0d0d0;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 48px;
+    }
+
+    .charge-list {
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      
+    }
+
+    .charge-list li {
+      box-sizing: border-box;
+      flex: 0 1 24%;
+      padding: 10px;
+      margin: 0 1% 2% 0;
+      border-radius: 10px;
+      transition: all .4s;
+    }
+
+    .charge-list li:hover {
+      margin-top: -1%;
+    }
+
+    .charge-list li:nth-child(n) {
+      background: #aaaadd;
+    }
+
+    .charge-list li:nth-child(2n) {
+      background: #ddddaa;
+    }
+
+    .charge-list li:nth-child(3n) {
+      background: #dad;
+    }
+
+    .charge-list li:nth-child(3n+1) {
+      background: #aaf;
+    }
