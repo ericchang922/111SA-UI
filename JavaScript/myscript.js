@@ -4,6 +4,8 @@ var status123 = false;
 
 var myinterval;
 
+
+
 function loop() {
     if (!status123) {
        myinterval =  setInterval(changeColor, 1000); 
