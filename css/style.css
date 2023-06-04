@@ -16,7 +16,7 @@ body {
 .block{
     width: 500px;
     height: 300px;
-    background-color: chocolate;
+    background-color: lightslategray;
     position: absolute;
 }
 #block1 {
