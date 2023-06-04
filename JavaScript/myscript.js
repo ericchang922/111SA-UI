@@ -4,17 +4,15 @@ var status123 = false;
 
 var myinterval;
 
-
-
 function loop() {
     if (!status123) {
-       myinterval =  setInterval(changeColor, 1000); 
-       status123 = true;
+        myinterval = setInterval(changeColor, 1000);
+        status123 = true;
     } else {
         clearInterval(myinterval);
         status123 = false;
     }
-    
+
 }
 
 function changeColor() {
@@ -46,7 +44,7 @@ function changeColor() {
     var greenlight_hr = document.querySelectorAll("div.green-light-hr");
 
 
-    if ( i == 0 ) {
+    if (i == 0) {//¬õºñ
         redlight_vr.forEach(i => i.style.backgroundColor = "red");
         yellowlight_vr.forEach(i => i.style.backgroundColor = "darkgoldenrod");
         greenlight_vr.forEach(i => i.style.backgroundColor = "darkgreen");
@@ -56,9 +54,9 @@ function changeColor() {
         greenlight_hr.forEach(i => i.style.backgroundColor = "greenyellow");
 
         i++;
-    } else if ( i == 1 ) {
-        redlight_vr.forEach(i => i.style.backgroundColor = "darkred");
-        yellowlight_vr.forEach(i => i.style.backgroundColor = "yellow");
+    } else if (i == 1) {//¬õ¶À
+        redlight_vr.forEach(i => i.style.backgroundColor = "red");
+        yellowlight_vr.forEach(i => i.style.backgroundColor = "darkgoldenrod");
         greenlight_vr.forEach(i => i.style.backgroundColor = "darkgreen");
 
         yellowlight_hr.forEach(i => i.style.backgroundColor = "yellow");
@@ -66,7 +64,7 @@ function changeColor() {
         greenlight_hr.forEach(i => i.style.backgroundColor = "darkgreen");
 
         i++;
-    } else if ( i == 2 ) {
+    } else if (i == 2) {//ºñ¬õ
         redlight_vr.forEach(i => i.style.backgroundColor = "darkred");
         yellowlight_vr.forEach(i => i.style.backgroundColor = "darkgoldenrod");
         greenlight_vr.forEach(i => i.style.backgroundColor = "greenyellow");
@@ -75,7 +73,17 @@ function changeColor() {
         redlight_hr.forEach(i => i.style.backgroundColor = "red");
         greenlight_hr.forEach(i => i.style.backgroundColor = "darkgreen");
 
-        i=0;
+        i++;
+    } else if (i == 3) {//¶À¬õ
+        redlight_vr.forEach(i => i.style.backgroundColor = "darkred");
+        yellowlight_vr.forEach(i => i.style.backgroundColor = "yellow");
+        greenlight_vr.forEach(i => i.style.backgroundColor = "darkgreen");
+
+        yellowlight_hr.forEach(i => i.style.backgroundColor = "darkgoldenrod");
+        redlight_hr.forEach(i => i.style.backgroundColor = "red");
+        greenlight_hr.forEach(i => i.style.backgroundColor = "darkgreen");
+
+        i = 0;
     }
-    
+
 }
