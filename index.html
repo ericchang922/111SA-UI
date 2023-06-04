@@ -1,59 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Traffic light system</title>
-    <script src="JavaScript/myscript.js"></script>
-    <script src="JavaScript/connect.js"></script>
-    <!-- <script src=""></script> -->
+    <script src="js/timeCalculator.js"></script>
 </head>
+
 <body>
-    <div class="insectionid1">
-        <ul class="intersection-id"></ul>
-    </div>
+    <div class="block" id="block1"></div>
+    <div class="block" id="block2"></div>
+    <div class="block" id="block3"></div>
+    <div class="block" id="block4"></div>
 
-    <div class="insectionid2">
-        <ul class="intersection-id2"></ul>
-    </div>
-
-    <div class="insectionid3">
-        <ul class="intersection-id3"></ul>
-    </div>
-
-    <div class="insectionid4">
-        <ul class="intersection-id4"></ul>
-    </div>
-
-    <div class="block1"></div>
-    <div class="block2"></div>
-    <div class="block3"></div>
-    <div class="block4"></div>
-
-    <div class="traffic-light-box1">
+    <div class="traffic-light-box1" id="raffic-light-box1">
         <div class="red-light-vr"></div>
         <div class="yellow-light-vr"></div>
         <div class="green-light-vr"></div>
     </div>
 
-    <div class="traffic-light-box2">
+    <div class="traffic-light-box2" id="raffic-light-box2">
         <div class="red-light-vr"></div>
         <div class="yellow-light-vr"></div>
         <div class="green-light-vr"></div>
     </div>
+    <div class="btnStart">
+        <button onclick="calculator()">start</button>
+    </div>
+    <div id="timer">timer</div>
 
-    <button onclick="loop()">start</button>
-    <button onclick="connectToJava()">connect</button>
-
-    <div class="traffic-light-box3">
+    <div class="traffic-light-box3" id="raffic-light-box3">
         <div class="red-light-hr"></div>
         <div class="yellow-light-hr"></div>
         <div class="green-light-hr"></div>
     </div>
 
-    <div class="traffic-light-box4">
+    <div class="traffic-light-box4" id="raffic-light-box4">
         <div class="red-light-hr"></div>
         <div class="yellow-light-hr"></div>
         <div class="green-light-hr"></div>
@@ -62,4 +47,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 </body>
+
 </html>
